@@ -3,6 +3,9 @@
 - Requirements to run your Python code (libraries, etc)
     Our Python ipynb files in the source code folder has all the neccesary libraries loaded. So to run the ipynb files download and open those files into a pytorch       running environments such as google colab, kaggle notebooks. Now you just need to execute the cell in order to fetch those libraries. Execute     cell by cell in order  so that no cell is missed while execution. However, please be mindful of the dataset path that needs to be set to the dataset either downloaded into your local drive  path or google drive path. 
     
+ SOURCE CODE folder explanation:
+ The Source code folder consists of 4 main ipynb files namingly googlenet, resnet18, alexnet and 3rd dataset models. The 3rd dataset models file consists of 3 models trained with each of our choosen CNN Architectures on Vegetable Images dataset. The other 3 files consists of Freiburg dataset and Grocery Store Dataset models in each of the respective file. Additionally the resnt18 file consists of hyperparameter tuning and both resnet18 and googlenet consists of transfer learning models on Freiburg Dataset. SO overall the source code folder has 12 models.
+    
 - Instruction on how to train/validate your model
 As two of our datasets are already split to train test and validation sets you just to set paths for each folder in the dataset. However, in case of freiburg dataset you have specifically mention the test split and validation split so that the dataset can be divided. Further, define a model from pytorch library and run it. Now create a train function to train the defined model on the dataset. Next, define the epochs, optimizer and loss function to call the train function and train the model. 
 
